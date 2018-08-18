@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/*
+ * Default Upcoming Theme CSS
+ * Based on Bootstrap 4.1.3
+ * Copyright 2013-2018 Carl Lindner
+ * Licensed under MIT
+*/
+
+/*
+--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------
+
+* GENERAL STYLEs
+	- Body
+	- Typography
+	- Background
+
+* Overlay STYLEs
+	- Overlay Background
+	- Logo
+	- Content
+	- Spacer
+	- Social
+	- Footer
+*/
+
+/* === GENERAL STYLES === */
+
+/* --- Body Styles --- */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Typography --- */
+body {
+     font-family: 'Lato', sans-serif;
+     background: #FAEBE5;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+     font-family: 'Lato', sans-serif;
+}
+p {
+     font-family: 'Merriweather', serif;
+}
+.tooltip {
+     font-family: 'Lato', sans-serif;
+}
+.btn {
+     font-family: 'Lato', sans-serif;
+}
+.popover-header {
+     font-family: 'Lato', sans-serif;
+}
+.popover-body {
+     font-family: 'Merriweather', serif;
+}
+
+/* --- Background --- */
+#backdrop {
+	background-image: url("../img/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+	z-index: 1;
+}
+
+/* === Overlay STYLES === */
+
+/* --- Overlay Background --- */
+#overlay {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 3rem;
+	z-index: 2;
+}
+.overlay-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 35rem;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+	#overlay {
+		height: 100%;
+		width: 40rem;
+		padding-bottom: 0;
+	}
+	.overlay-bg {
+		min-height: 0;
+	}
+}
+@media (min-width: 992px) {
+	#overlay {
+		left: 5rem;
+		height: 100%;
+		width: 35rem;
+		padding-bottom: 0;
+	}
+	.overlay-bg {
+		min-height: 0;
+	}
+}
+
+/* --- Logo Style --- */
+#logo {
+	text-align: center;
+	z-index: 3;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	#logo {
+		padding: 1rem 3rem 1rem 3rem;
+	}
+}
+@media (min-width: 992px) {
+	#logo {
+		padding-left: 1.5rem;
+    	padding-right: 1.5rem;
+	}
+}
+
+/* --- Content Style --- */
+#content {
+	text-align: left;
+	z-index: 3;
+}
+
+@media (min-width: 768px) {
+	#content {
+		padding-left: 3rem;
+    	padding-right: 3rem;
+	}
+}
+
+@media (min-width: 992px) {
+	#content {
+		padding-left: 1.5rem;
+    	padding-right: 1.5rem;
+	}
+}
+
+/* --- Spacer Style --- */
+.content-spacer {
+	border-color: rgba(19, 67, 138, 1);
+	max-width: 500px;
+}
+
+/* --- Social Style --- */
+#social {
+	text-align: center;
+	z-index: 3;
+}
+#social ul {
+	margin-top: 2rem;
+	width: 100%;
+	text-align: center;
+}
+#social ul > li {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.social-icon {
+	display: block;
+	border: solid 1px rgba(19, 67, 138, 1);
+	color: rgba(0, 46, 102, 1);
+	border-radius: 100%;
+	font-size: 1rem;
+	line-height: 3rem;
+	height: 3rem;
+	width: 3rem;
+}
+.social-icon:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(19, 67, 138, 1);
+}
+.social-icon:focus,
+.social-icon.focus {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(19, 67, 138, 1);
+}
+.social-icon:disabled,
+.social-icon.disabled {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(19, 67, 138, 1);
+}
+
+@media (min-width: 768px) {
+	#social {
+		padding-left: 3rem;
+    	padding-right: 3rem;
+	}
+}
+@media (min-width: 992px) {
+	#social {
+		padding-left: 1.5rem;
+    	padding-right: 1.5rem;
+	}
+}
+
+/* --- Footer Style --- */
+#copyright {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	z-index: 3;
+}
+.text-link {
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+a.text-link:hover, a.text-link:focus {
+	color: rgba(255, 255, 255, 1) !important;
+}
+
+@media (min-width: 768px) {
+	#copyright {
+		width: 40rem;
+		color: rgba(0, 46, 102, 1);
+		padding: 1rem 3rem 1rem 3rem;
+	}
+	.text-link {
+		color: rgba(0, 46, 102, 1) !important;
+	}
+
+	a.text-link:hover, a.text-link:focus {
+		color: rgba(47,48,66, 1) !important;
+	}
+}
+@media (min-width: 992px) {
+	#copyright {
+		left: 5rem;
+		width: 35rem;
+		padding: 1rem 1.5rem 1rem 1.5rem;
+	}
+}
