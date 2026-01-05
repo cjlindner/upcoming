@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en" data-bs-theme="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="A comming soon and/or under construction website template.">
+	<meta name="description" content="A coming soon and/or under construction website template.">
 	<meta name="keywords" content="">
 	<meta name="author" content="CJLindner">
 
-	<title>Upcoming – A Starter Template by CJlindner.</title>
+	<title>Upcoming – A Starter Template by CJLindner.</title>
 	<link rel="license" href="/LICENSE">
 	
 	<!-- Favicon -->
@@ -15,12 +15,14 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/favicon/site.webmanifest">
+	
 	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2b5797">
-	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
 	
 	<!-- Bootstrap CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Custom Fonts CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Merriweather:400,400i,700" rel="stylesheet">
@@ -31,78 +33,88 @@
 
 <body>
 	<div id="backdrop">
-		<div id="overlay">
-			<div class="overlay-bg"></div>
-			<div class="container h-100">
-				<div class="row h-100">
-					<div class="col-12 my-auto">
-						<header id="logo">
-							<img src="img/logo.png" alt="Website Logo">
-						</header>
-						<section id="content" class="py-3">
-							<h1>Coming Soon</h1>
-							<p>Our website is currently undergoing scheduled update. We are working hard to finish it and we should be back soon. Thank you for your patience.</p>
-						</section>
-						<hr class="content-spacer">
-						<section id="social">
-							<ul class="social-list list-inline">
-								<li class="social-link list-inline-item">
-									<a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
-										<span class="social-icon">
-											<i class="fab fa-twitter"></i>
-										</span>
-									</a>
-								</li>
-								<li class="social-link list-inline-item">
-									<a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
-										<span class="social-icon">
-											<i class="fab fa-instagram"></i>
-										</span>	
-									</a>
-								</li>
-								<li class="social-link list-inline-item">
-									<a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Linkedin">
-										<span class="social-icon">
-											<i class="fab fa-linkedin-in"></i>
-										</span>
-									</a>
-								</li>
-								<li class="social-link list-inline-item">
-									<a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
-										<span class="social-icon">
-											<i class="fab fa-facebook-f"></i>
-										</span>
-									</a>
-								</li>
-								<li class="social-link list-inline-item">
-									<a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="GitHub">
-										<span class="social-icon">
-											<i class="fab fab fa-github"></i>
-										</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<footer id="copyright">
-							<p class="mb-0">Copyright &copy; 2018 Your Name. All Rights Reserved.</p>
-							<p>Theme: <a href="https://github.com/cjlindner/upcoming" class="text-link" aria-label="Upcoming Repository" data-toggle="tooltip" data-placement="top" title="Github Repository">Upcoming</a> by Carl Lindner.</p>
-						</footer>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- jQuery --> 
-	<script src="vendor/jquery/jquery-3.3.1.min.js"></script>
-	
+        <div class="container-fluid">
+            <div class="row vh-100 p-3">
+                <div id="overlay" class="col-sm-10 col-md-5 col-lg-4 offset-sm-1 offset-md-0">
+                    <div class="row h-75">
+                        <div class="col-12">
+                            <header id="logo">
+                                <img src="img/logo.png" width="50%" alt="Website Logo">
+                            </header>
+                            <section id="content" class="py-3">
+                                <h1>Coming Soon</h1>
+                                <p>Our website is currently undergoing scheduled update. We are working hard to finish it and we should be back soon. Thank you for your patience.</p>
+                            </section>
+                            <hr class="content-spacer">
+                            <section id="social">
+                                <ul class="social-list list-inline">
+                                    <li class="social-link list-inline-item">
+                                        <a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                            <span class="social-icon">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="social-link list-inline-item">
+                                        <a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                            <span class="social-icon">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </span>	
+                                        </a>
+                                    </li>
+                                    <li class="social-link list-inline-item">
+                                        <a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                            <span class="social-icon">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="social-link list-inline-item">
+                                        <a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                            <span class="social-icon">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="social-link list-inline-item">
+                                        <a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="GitHub">
+                                            <span class="social-icon">
+                                                <i class="fa-brands fa-github"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row h-25">
+                        <div class="col-12 align-self-end">
+                            <footer id="copyright">
+                                <p class="mb-0">Copyright &copy; 2025 Your Name. All Rights Reserved.</p>
+                                <p class="mb-0">Theme: <a href="https://github.com/cjlindner/upcoming" class="text-link" aria-label="Upcoming Repository" data-toggle="tooltip" data-placement="top" title="Github Repository">Upcoming</a> by Carl Lindner.</p>
+                            </footer> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 	<!--Bootstrap Main Scripts -->
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="assets/bootstrap/js/bootstrap.bundle.js"></script> -->
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	
 	<!-- Additional Plugin Scripts -->
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="vendor/fontawesome/js/fontawesome-all.min.js"></script>
 	
+    <!-- <script src="assets/fontawesome/js/fontawesome.js"></script> -->
+    <!-- <script src="assets/fontawesome/js/brands.js"></script> -->
+    <!-- <script src="assets/fontawesome/js/solid.js"></script> -->
+    <script src="assets/fontawesome/js/fontawesome.min.js"></script>
+    <script src="assets/fontawesome/js/brands.min.js"></script>
+    <script src="assets/fontawesome/js/solid.min.js"></script>
+
 	<!-- Theme Script -->
 	<script src="js/upcoming.js"></script>
 	
